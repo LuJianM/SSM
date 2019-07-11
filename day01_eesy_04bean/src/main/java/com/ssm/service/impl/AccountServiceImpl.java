@@ -9,13 +9,22 @@ import java.util.PriorityQueue;
 public class AccountServiceImpl implements IAccountService {
 
 
-    private IAccountDao accountDao = new AccountDao();
+    //private IAccountDao accountDao = new AccountDao();
 
     public AccountServiceImpl(){
         System.out.println("AccountServiceImpl被实例化了！");
     }
 
     public void saveAccount(){
-        accountDao.saveAccount();
+        System.out.println("保存账户成功！");
+        //accountDao.saveAccount();
+    }
+
+    public void init(){
+        System.out.println("AccountServiceImpl对象创建了");
+    }
+
+    public void destory(){
+        System.out.println("AccountServiceImpl对象销毁了");
     }
 }

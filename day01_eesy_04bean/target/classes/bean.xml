@@ -35,9 +35,6 @@
             出生：
             或者
         多例对象：
-            出生：使用对象时，由spring框架为我们创建
-            或者：只要是使用，就一直活着
-            死亡：长时间不用，且没有别的对象引用，有GC负责回收
     -->
     <bean id="accountService" class="com.ssm.service.impl.AccountServiceImpl" scope="singleton" init-method="init" destroy-method="destory"></bean>
 </beans>
