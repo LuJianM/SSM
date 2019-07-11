@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--spring中的依赖注入
+        Dependency Injection
+        IOC的作用，降低耦合（依赖关系）
+        依赖关系的管理都交由spring来维护
+        当前类需要用到其他类的对象，由spring为我们提供，我们只需要在配置文件中说明即可。
+        依赖关系的维护则称为依赖注入。
+
+        依赖注入：
+        能注入的类型有三种：
+            基本类型和String
+            其他的bean类型（在配置文件中或者注解中配置过的bean）
+            复杂类型/集合类型
+        注入的方式有三种：
+            1. 使用构造器注入
+            2. 使用set方法提供
+            3. 使用注解提供
+    -->
+
+    <!--构造器注入：
+        使用的标签：constructor-arg
+        标签位置：bean标签内部
+        标签属性：
+        =================如何定位到指定属性=======================
+            type：要注入数据的数据类型，同时也是构造器入参的数据类型。如果构造器有多个同类型的属性，则依照配置循序依次注入。
+            index：属性的顺序
+            name：属性的名称
+        ++++++++++++++++++给是属性注入值++++++++++++++++++++++++++++++++++
+            value：用于提供基本数据类型
+            ref：前面
+
+    -->
+    <bean id="accountService" class="com.ssm.service.impl.AccountServiceImpl">
+        <constructor-arg type="java.lang.String" value="你叫什么名字"></constructor-arg>
+        <constructor-arg type="java.lang.String" value="你好啊"></constructor-arg>
+        <constructor-arg name="age" value="18"></constructor-arg>
+        <constructor-arg name="brithday" ref="now"></constructor-arg>
+    </bean>
+
+    <bean id="now" class="java.util.Date"></bean>
+
+
+</beans>
