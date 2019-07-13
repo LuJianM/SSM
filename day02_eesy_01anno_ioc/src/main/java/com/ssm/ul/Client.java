@@ -26,19 +26,15 @@ public class Client {
      * @param args
      */
     public static void main(String[] args) throws Exception{
-        ClassPathXmlApplicationContext applicationContext = null;
-//        applicationContext = new FileSystemXmlApplicationContext("");
-//        applicationContext = new AnnotationConfigApplicationContext("");
-        applicationContext = new ClassPathXmlApplicationContext("bean.xml");
 
-        //两种获取实例的方式
-        IAccountService as3 = (IAccountService) applicationContext.getBean("accountService3");
-        System.out.println(as3);
-        as3.saveAccount();
-        as3.toString();
-        //手动关闭容器
-        applicationContext.close();
-        Thread.sleep(3000);
+        ApplicationContext applicationContext =new ClassPathXmlApplicationContext("bean.xml");
 
+        IAccountService accountService = applicationContext.getBean("accountService",AccountServiceImpl.class);
+
+        //IAccountService accountService2 = applicationContext.getBean("accountserviceImpl2",AccountServiceImpl.class);
+
+        System.out.println(accountService);
+
+        accountService.saveAccount();
     }
 }

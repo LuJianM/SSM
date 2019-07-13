@@ -26,19 +26,60 @@
         使用的标签：constructor-arg
         标签位置：bean标签内部
         标签属性：
-            type：要注入数据的数据类型，同时也是构造器入参的数据类型。
-
+        =================如何定位到指定属性=======================
+            type：要注入数据的数据类型，同时也是构造器入参的数据类型。如果构造器有多个同类型的属性，则依照配置循序依次注入。
+            index：属性的顺序
+            name：属性的名称
+        ++++++++++++++++++给是属性注入值++++++++++++++++++++++++++++++++++
+            value：用于提供基本数据类型
+            ref：前面
 
     -->
     <bean id="accountService" class="com.ssm.service.impl.AccountServiceImpl">
         <constructor-arg type="java.lang.String" value="你叫什么名字"></constructor-arg>
         <constructor-arg type="java.lang.String" value="你好啊"></constructor-arg>
-
         <constructor-arg name="age" value="18"></constructor-arg>
         <constructor-arg name="brithday" ref="now"></constructor-arg>
     </bean>
 
     <bean id="now" class="java.util.Date"></bean>
 
+    <bean id="accountService2" class="com.ssm.service.impl.AccountServiceImpl2">
+        <property name="name" value="使用set方式"></property>
+        <property name="age" value="20"></property>
+        <property name="brithday" ref="now"></property>
+    </bean>
+
+    <bean id="accountService3" class="com.ssm.service.impl.AccountServiceImpl3">
+        <property name="myStr">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+            </array>
+        </property>
+
+        <property name="myList">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+            </list>
+        </property>
+
+        <property name="myMap">
+            <map>
+                <entry key="testA" value="value1"></entry>
+                <entry key="testB">
+                    <value>value2</value>
+                </entry>
+            </map>
+        </property>
+
+        <property name="myProps">
+            <props>
+                <prop key="key1">hahahha</prop>
+                <prop key="key2">lalala</prop>
+            </props>
+        </property>
+    </bean>
 
 </beans>

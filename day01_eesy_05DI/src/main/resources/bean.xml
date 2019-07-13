@@ -44,5 +44,42 @@
 
     <bean id="now" class="java.util.Date"></bean>
 
+    <bean id="accountService2" class="com.ssm.service.impl.AccountServiceImpl2">
+        <property name="name" value="使用set方式"></property>
+        <property name="age" value="20"></property>
+        <property name="brithday" ref="now"></property>
+    </bean>
+
+    <bean id="accountService3" class="com.ssm.service.impl.AccountServiceImpl3">
+        <property name="myStr">
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+            </array>
+        </property>
+
+        <property name="myList">
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+            </list>
+        </property>
+
+        <property name="myMap">
+            <map>
+                <entry key="testA" value="value1"></entry>
+                <entry key="testB">
+                    <value>value2</value>
+                </entry>
+            </map>
+        </property>
+
+        <property name="myProps">
+            <props>
+                <prop key="key1">hahahha</prop>
+                <prop key="key2">lalala</prop>
+            </props>
+        </property>
+    </bean>
 
 </beans>

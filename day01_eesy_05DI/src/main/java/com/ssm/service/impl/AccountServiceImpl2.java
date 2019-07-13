@@ -1,25 +1,33 @@
 package com.ssm.service.impl;
 
-import com.ssm.dao.IAccountDao;
-import com.ssm.dao.impl.AccountDao;
 import com.ssm.service.IAccountService;
 
 import java.util.Date;
-import java.util.PriorityQueue;
 
-public class AccountServiceImpl implements IAccountService {
+public class AccountServiceImpl2 implements IAccountService {
 
-    public AccountServiceImpl(String name, String name1, Integer age, Date brithday) {
-        this.name = name;
-        this.name1 = name1;
-        this.age = age;
-        this.brithday = brithday;
-    }
+
 
     public String name;
     public String name1;
     public Integer age;
     public Date brithday;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setName1(String name1) {
+        this.name1 = name1;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public void setBrithday(Date brithday) {
+        this.brithday = brithday;
+    }
 
     @Override
     public String toString() {
@@ -31,7 +39,7 @@ public class AccountServiceImpl implements IAccountService {
                 '}';
     }
 
-//    public AccountServiceImpl(){
+//    public AccountServiceImpl2(){
 //        System.out.println("AccountServiceImpl被实例化了！");
 //    }
 
