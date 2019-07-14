@@ -5,6 +5,7 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 import javax.sql.DataSource;
 
@@ -18,17 +19,24 @@ import javax.sql.DataSource;
  *
  */
 
+
 @Configuration
 @ComponentScan(basePackages = "com.ssm")
 public class SpringConfiguration {
 
+    /**
+     *
+     * @param dataSource
+     * @return
+     */
     @Bean(name = "runner")
+    @Scope(value = "prototype")
     public QueryRunner createQueryRunner(DataSource dataSource){
         return new QueryRunner(dataSource);
     }
 
     /**
-     *
+     *数据源配置
      * @return
      */
     @Bean(name = "dataSource")

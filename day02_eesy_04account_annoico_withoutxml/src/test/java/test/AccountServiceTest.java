@@ -56,7 +56,7 @@ public class AccountServiceTest {
 
     @Test
     public void testUpdateAccount() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
 
         IAccountService accountService = ac.getBean("accountServiceImpl",IAccountService.class);
 
@@ -74,7 +74,7 @@ public class AccountServiceTest {
 
     @Test
     public void testdeleteAccount() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
 
         IAccountService accountService = ac.getBean("accountServiceImpl",IAccountService.class);
 
