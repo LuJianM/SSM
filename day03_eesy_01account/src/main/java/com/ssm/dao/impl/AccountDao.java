@@ -7,6 +7,7 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -24,9 +25,13 @@ public class AccountDao  implements IAccountDao {
 
     public List<Account> findAllAccount() {
         try {
-            return runner.query(connectionUtils.getThreadConnection(),"select * from account", new BeanListHandler<Account>(Account.class));
+            Connection connection = connectionUtils.getThreadConnection();
+            List<Account> accounts =runner.query(connection,"select * from account", new BeanListHandler<Account>(Account.class));
+            return accounts;
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+        } finally {
+            System.out.println("123");
         }
     }
 

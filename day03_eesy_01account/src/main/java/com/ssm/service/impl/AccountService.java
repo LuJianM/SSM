@@ -25,7 +25,23 @@ public class AccountService implements IAccountService {
     }
 
     public List<Account> findAllAccount() {
-        return accountDao.findAllAccount();
+        try {
+            //1. 开启事务
+            transactionManager.beginTransaction();
+            //2. 执行操作
+            List<Account> accounts = accountDao.findAllAccount();
+
+            //3. 提交事务
+            transactionManager.commitTransaction();
+
+            return accounts;
+        } catch (Exception e) {
+            e.printStackTrace();
+            //4. 回滚事务
+            transactionManager.rollbackTransaction();
+        }finally {
+            transactionManager.releaseTransaction();
+        }
     }
 
     public Account findAccountById(int accountId) {

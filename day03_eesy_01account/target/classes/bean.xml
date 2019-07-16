@@ -19,7 +19,7 @@
 
 
     <bean id="transactionManager" class="com.ssm.utlis.TransactionManager">
-        <!--<property name="connectionUtils" ref="connectionUtils"></property>-->
+        <property name="connectionUtils" ref="connectionUtils"></property>
     </bean>
 
     <!--配置dao对象-->
