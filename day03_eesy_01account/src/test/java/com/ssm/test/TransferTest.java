@@ -14,7 +14,7 @@ public class TransferTest {
 
         IAccountService as = ac.getBean("accountService",IAccountService.class);
 
-        as.transferAccounts("我是B","我是LJM",100f);
+        as.transferAccounts("我是A","我是B",100f);
 
     }
 

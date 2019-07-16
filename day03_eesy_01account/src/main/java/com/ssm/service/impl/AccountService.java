@@ -3,6 +3,7 @@ package com.ssm.service.impl;
 import com.ssm.dao.IAccountDao;
 import com.ssm.model.Account;
 import com.ssm.service.IAccountService;
+import com.ssm.utlis.TransactionManager;
 
 import java.util.List;
 
@@ -12,6 +13,12 @@ import java.util.List;
 public class AccountService implements IAccountService {
 
     private IAccountDao accountDao;
+
+    private TransactionManager transactionManager;
+
+    public void setTransactionManager(TransactionManager transactionManager) {
+        this.transactionManager = transactionManager;
+    }
 
     public void setAccountDao(IAccountDao accountDao) {
         this.accountDao = accountDao;
@@ -50,13 +57,31 @@ public class AccountService implements IAccountService {
      * @param money     转账金额
      */
     public void transferAccounts(String outName, String entryName, float money) {
-        Account source = accountDao.findAccountByName(outName);
-        Account target = accountDao.findAccountByName(entryName);
+        try {
+            transactionManager.beginTransaction();
 
-        source.setMoney(source.getMoney()-money);
-        target.setMoney(target.getMoney()+money);
+            Account source = accountDao.findAccountByName(outName);
+            Account target = accountDao.findAccountByName(entryName);
 
-        accountDao.UpdateAccountById(source);
-        accountDao.UpdateAccountById(target);
+
+            source.setMoney(source.getMoney()-money);
+            target.setMoney(target.getMoney()+money);
+
+            accountDao.UpdateAccountById(source);
+
+            int i = 1/0;
+
+            accountDao.UpdateAccountById(target);
+
+            transactionManager.commitTransaction();
+        } catch (Exception e) {
+            //5.回滚事务
+            transactionManager.rollbackTransaction();
+            System.out.println("回滚完毕");
+            e.printStackTrace();
+        } finally {
+            //6.释放连接
+            transactionManager.releaseTransaction();
+        }
     }
 }
