@@ -29,9 +29,7 @@ public class AccountDao  implements IAccountDao {
             List<Account> accounts =runner.query(connection,"select * from account", new BeanListHandler<Account>(Account.class));
             return accounts;
         } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            System.out.println("123");
+            throw new RuntimeException(e);
         }
     }
 

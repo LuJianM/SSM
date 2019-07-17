@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 使用Alt+Insert，快速实现接口方法
  */
-public class AccountService implements IAccountService {
+public class AccountService_OLD implements IAccountService {
 
     private IAccountDao accountDao;
 
@@ -25,7 +25,24 @@ public class AccountService implements IAccountService {
     }
 
     public List<Account> findAllAccount() {
-        return accountDao.findAllAccount();
+        List<Account> accounts = null;
+        try {
+            //1. 开启事务
+            transactionManager.beginTransaction();
+            //2. 执行操作
+            accounts = accountDao.findAllAccount();
+
+            //3. 提交事务
+            transactionManager.commitTransaction();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            //4. 回滚事务
+            transactionManager.rollbackTransaction();
+        }finally {
+            transactionManager.releaseTransaction();
+        }
+        return accounts;
     }
 
     public Account findAccountById(int accountId) {
