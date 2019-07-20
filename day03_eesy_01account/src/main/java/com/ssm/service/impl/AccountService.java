@@ -14,11 +14,6 @@ public class AccountService implements IAccountService {
 
     private IAccountDao accountDao;
 
-    private TransactionManager transactionManager;
-
-    public void setTransactionManager(TransactionManager transactionManager) {
-        this.transactionManager = transactionManager;
-    }
 
     public void setAccountDao(IAccountDao accountDao) {
         this.accountDao = accountDao;
@@ -57,31 +52,21 @@ public class AccountService implements IAccountService {
      * @param money     转账金额
      */
     public void transferAccounts(String outName, String entryName, float money) {
-        try {
-            transactionManager.beginTransaction();
 
-            Account source = accountDao.findAccountByName(outName);
-            Account target = accountDao.findAccountByName(entryName);
+        System.out.println("########");
+        Account source = accountDao.findAccountByName(outName);
+        Account target = accountDao.findAccountByName(entryName);
 
 
-            source.setMoney(source.getMoney()-money);
-            target.setMoney(target.getMoney()+money);
+        source.setMoney(source.getMoney()-money);
+        target.setMoney(target.getMoney()+money);
 
-            accountDao.UpdateAccountById(source);
+        accountDao.UpdateAccountById(source);
 
-            int i = 1/0;
+        int i = 1/0;
 
-            accountDao.UpdateAccountById(target);
+        accountDao.UpdateAccountById(target);
 
-            transactionManager.commitTransaction();
-        } catch (Exception e) {
-            //5.回滚事务
-            transactionManager.rollbackTransaction();
-            System.out.println("回滚完毕");
-            e.printStackTrace();
-        } finally {
-            //6.释放连接
-            transactionManager.releaseTransaction();
-        }
+
     }
 }
