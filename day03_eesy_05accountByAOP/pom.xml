@@ -5,9 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ssm</groupId>
-    <artifactId>day03_eesy_03springAOP</artifactId>
+    <artifactId>day03_eesy_05accountByAOP</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+
+
+
 
     <dependencies>
         <dependency>
@@ -16,11 +19,22 @@
             <version>5.1.0.RELEASE</version>
         </dependency>
 
-<!--        用来解析切入点表达式-->
         <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>1.8.9</version>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.40</version>
+        </dependency>
+
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
         </dependency>
 
         <dependency>
@@ -29,7 +43,11 @@
             <version>4.11</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.1.3.RELEASE</version>
+        </dependency>
 
     </dependencies>
-
 </project>

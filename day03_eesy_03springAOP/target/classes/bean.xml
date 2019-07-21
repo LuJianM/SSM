@@ -27,31 +27,6 @@
                         格式：execute(切入点表达式)
                         切入点表达式
                             修饰符 返回值 类全限定名.方法名
-            5.切入点表达式的写法
-                标准写法
-                    public void com.ssm.service.impl.AccountServiceImpl.saveAccount())
-                省略访问修饰符
-                    void com.ssm.service.impl.AccountServiceImpl.saveAccount()
-                返回值使用通配符
-                    * com.ssm.service.impl.AccountServiceImpl.saveAccount()
-                包名使用通配符
-                    * *.*.*.*.AccountServiceImpl.saveAccount()
-                包名中间省略
-                    * *..*.AccountServiceImpl.saveAccount()
-                类名省略
-                    * *..*.*.saveAccount()
-                方法名省略
-                    * *..*.*.*()
-                方法参数匹配省略
-                    * *..*.*.*():匹配无参方法
-                    * *..*.*.*(int):参数为int的方法（普通类型）
-                    * *..*.*.*(java.lang.String):引用类型
-
-
-                全通配写法(参数省略)：
-                    * *..*.*(..)
-
-
 -->
 
     <bean id="logger" class="com.ssm.utils.Logger"></bean>

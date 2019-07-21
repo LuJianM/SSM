@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e9b09eb-54a1-4a76-ac73-3635ed86d58b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6e9b09eb-54a1-4a76-ac73-3635ed86d58b" name="Default" comment="新增bean.xml配置文件">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ssm/test/AOPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_04AdviceType/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_04AdviceType/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_04AdviceType/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/dao/IAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/dao/impl/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/factory/BeanFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/factory/MyInvokationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/service/impl/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/service/impl/AccountService_OLD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/utlis/ConnectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/java/com/ssm/utlis/TransactionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/main/resources/bean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day03_eesy_05accountByAOP/src/test/java/com/ssm/test/TransferTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/src/main/java/com/ssm/service/impl/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/src/main/java/com/ssm/service/impl/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/src/main/resources/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/src/test/java/com/ssm/test/TransferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/src/test/java/com/ssm/test/TransferTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/target/classes/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/target/classes/com/ssm/service/impl/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/target/classes/com/ssm/service/impl/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_01account/target/test-classes/com/ssm/test/TransferTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_01account/target/test-classes/com/ssm/test/TransferTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day03_eesy_02proxy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day03_eesy_02proxy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,16 +35,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="456">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/IAccountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/AccountServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="27" />
+              <folding>
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,8 +75,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/utils/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="209">
+              <caret line="11" column="53" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="53" />
+              <folding>
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#215#216#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/bean.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="61" column="46" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/ssm/test/AOPTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,10 +123,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/IAccountService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/utils/Logger.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/bean.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssm/service/impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/ssm/test/AOPTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bean.xml" />
       </list>
     </option>
   </component>
@@ -139,8 +201,28 @@
               <item name="day03_eesy_03springAOP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day03_eesy_03springAOP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day03_eesy_03springAOP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day03_eesy_03springAOP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day03_eesy_03springAOP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day03_eesy_03springAOP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day03_eesy_03springAOP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="day03_eesy_03springAOP" type="b2602c69:ProjectViewProjectNode" />
@@ -155,6 +237,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../day03_eesy_01account" />
@@ -163,7 +246,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -184,6 +267,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AOPTest.textAop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day03_eesy_03springAOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssm.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ssm.test" />
+      <option name="MAIN_CLASS_NAME" value="com.ssm.test.AOPTest" />
+      <option name="METHOD_NAME" value="textAop" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -200,6 +300,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AOPTest.textAop" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -214,18 +319,31 @@
       <workItem from="1563450052157" duration="133000" />
       <workItem from="1563451115048" duration="3640000" />
       <workItem from="1563517493574" duration="765000" />
-      <workItem from="1563609806854" duration="876000" />
+      <workItem from="1563609806854" duration="12204000" />
     </task>
+    <task id="LOCAL-00001" summary="新增bean.xml配置文件">
+      <created>1563627407703</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563627407703</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="AOPTest_textAop - 2019.07.20 at 21h 39m 23s.xml">
+      <configuration name="AOPTest.textAop" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5414000" />
+    <option name="totallyTimeSpent" value="16742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -233,9 +351,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32962137" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40423164" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -244,7 +363,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32962137" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -261,39 +380,89 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增bean.xml配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增bean.xml配置文件" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/impl/AccountServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="152">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="27" />
           <folding>
             <element signature="e#183#184#0" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
             <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/service/IAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="57">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/bean.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/utils/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="209">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/ssm/test/AOPTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="61" column="46" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="456">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>

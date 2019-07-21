@@ -15,7 +15,7 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     public int deleteAccount() {
-        System.out.println("执行了保存");
+        System.out.println("执行了删除");
         return 0;
     }
 }
