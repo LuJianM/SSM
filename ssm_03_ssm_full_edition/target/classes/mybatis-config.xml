@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!--    配置环境-->
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <!--配置连接数据库的四个基本信息，driver，url，username，password-->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/sc?characterEncoding=utf-8"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+<!--        <mapper class="dao/IUserDao.java"></mapper>-->
+
+        <package name="dao"/>
+    </mappers>
+
+
+
+
+
+
+
+
+
+<!--    <settings>-->
+<!--        <setting name="cacheEnabled" value="true"/>-->
+<!--        <setting name="useGeneratedKeys" value="true"/>-->
+<!--        <setting name="defaultExecutorType" value="REUSE"/>-->
+<!--        <setting name="lazyLoadingEnabled" value="true"/>-->
+<!--        <setting name="defaultStatementTimeout" value="250000"/>-->
+<!--    </settings>-->
+
+<!--    <mappers>-->
+<!--        <mapper resource="mapper/UserMapper.xml"></mapper>-->
+<!--    </mappers>-->
+    
+    
+    
+    
+<!--    &lt;!&ndash;配置环境&ndash;&gt;-->
+<!--    <settings>-->
+<!--        <setting name="cacheEnabled" value="true"/>-->
+<!--        <setting name="defaultStatementTimeout" value="3000"/>-->
+<!--        &lt;!&ndash;开启自动驼峰命名规则映射，如将数据库列名 A_COLUMN 映射成Java属性名aColumn&ndash;&gt;-->
+<!--        <setting name="mapUnderscoreToCamelCase" value="true"/>-->
+<!--        &lt;!&ndash;使用LOG4J2日志&ndash;&gt;-->
+<!--&lt;!&ndash;        <setting name="logImpl" value="LOG4J2"/>&ndash;&gt;-->
+<!--        &lt;!&ndash; 指定CGLIB代理 &ndash;&gt;-->
+<!--        <setting name="proxyFactory" value="CGLIB"/>-->
+<!--        <setting name="lazyLoadingEnabled" value="true"/>-->
+<!--    </settings>-->
+
+</configuration>

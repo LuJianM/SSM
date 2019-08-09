@@ -7,17 +7,22 @@ import service.IUserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
 
 @RequestMapping("/user")
 @Controller
 public class UserController {
 
     @Autowired
-    private IUserService userService = null;
+    IUserService userService = null;
+
+    @Autowired
+    DataSource dataSource = null;
 
     @RequestMapping("/login")
     public void login(HttpServletRequest request, HttpServletResponse response){
         System.out.println("hello world!");
+        System.out.println(dataSource);
         userService.login();
     }
 }
