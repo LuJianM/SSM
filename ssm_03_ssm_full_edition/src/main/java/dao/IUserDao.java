@@ -14,5 +14,7 @@ public interface IUserDao {
     @Select("select * from user1")
     List<User> findAll();
 
+
+
     User login(@Param("account") String account, @Param("password") String password);
 }
